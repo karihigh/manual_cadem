@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manual reportes web</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href="favicon.ico"/>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar"> 
+      <div class="row">
+        <div class="col-md-offset-3">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html" class="dpd-menu">Introducción</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="proceso.html" class="dropdown-toggle dpd-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proceso<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="proceso.html">Etapa 1</a></li>
+                <li><a href="etapa2.html">Etapa 2</a></li>
+                <li><a href="etapa3.html">Etapa 3</a></li>
+                <li><a href="etapa4.html">Etapa 4</a></li>
+                <li><a href="etapa5.html">Etapa 5</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="graficos.html" class="dropdown-toggle dpd-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Biblioteca de Gráficos<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="torta.html">Gráfico de torta</a></li>
+                <li><a href="linea.html">Gráfico de línea</a></li>
+                <li><a href="barra.html">Gráfico de barra</a></li>
+                <li><a href="barra_apilada.html">Gráfico de barra apilada</a></li>
+                <li><a href="barra_integrada.html">Gráfico de barra agrupada</a></li>
+                <li><a href="linea_barra.html">Gráfico de línea y barra</a></li>
+                <li><a href="burbuja.html">Gráfico de burbuja</a></li>
+                <li><a href="rendimiento.html">Gráfico de rendimiento</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="intro.html" class="dpd-menu">Recursos visuales</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-offset-2">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html"><img src="logo.png"></a></li>
+          </ul>
+        </div>
+      </div>    
+    </nav>
+    <div class="feature">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h2>ETAPA 5</h2>
+          <hr>
+          <h3>Recomendaciones para componer y organizar cada una de las vistas de un dashboard</h3>
+        </div>
+      </div>    
+    </div> 
+    <div style="margin-top: 70px;">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <p>En esta etapa lo más importante es ordenar los gráficos según <strong>jerarquía de información</strong> y la <strong>disponibilidad de espacio</strong>. Los gráficos se distribuyen en base a una grilla de 12 columnas, donde 1 gráfico puede ocupar 4, 6 o 12 de las columnas, como se muestra en el diagrama siguiente. Los gráficos que son más importantes para el cliente deben ubicarse en la parte superior de la vista. </p>
+          <img src="etapa5a.png" style="width: 100%;">
+          <p>Otras consideraciones importantes a tener en cuenta para la composición visual del dashboard son las siguientes:</p>
+          <p>1. Al organizar los gráficos en la grilla, se debe intentar no dejar espacios en blanco.</p>
+          <img src="etapa5b.png" style="width: 100%;">
+          <p>2. Los gráficos que se encuentran en una misma fila deben tener el mismo alto.</p>
+                    <img src="etapa5c.png" style="width: 100%;">
+          <p>3. Los gráficos que tienen información complementaria, comparativa o relacionable deben ubicarse en espacios continuos</p>
+          <p>4. Al distribuir los gráficos evita dejar espacios blancos (espacios sin gráficos) entre los gráficos. En caso de no poder evitarlo, se recomienda dejar el espacio en blanco para el final de la vista.</p>
+          <hr style="margin-top: 70px;">
+          <a href="etapa4.html"><div class="btn btn-primary pull-left next-btn"><span class="glyphicon glyphicon-menu-left"></span> ETAPA 4</div></a>
+          <a href="graficos.html"><div class="btn btn-primary pull-right next-btn">BIBLIOTECA DE GRÁFICOS <span class="glyphicon glyphicon-menu-right"></span></div></a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script src="js/holder.min.js"></script>
+</html>

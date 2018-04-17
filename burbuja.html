@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manual reportes web</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href="favicon.ico"/>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar"> 
+      <div class="row">
+        <div class="col-md-offset-3">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html" class="dpd-menu">Introducción</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="proceso.html" class="dropdown-toggle dpd-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proceso<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="proceso.html">Etapa 1</a></li>
+                <li><a href="etapa2.html">Etapa 2</a></li>
+                <li><a href="etapa3.html">Etapa 3</a></li>
+                <li><a href="etapa4.html">Etapa 4</a></li>
+                <li><a href="etapa5.html">Etapa 5</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="graficos.html" class="dropdown-toggle dpd-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Biblioteca de Gráficos<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="torta.html">Gráfico de torta</a></li>
+                <li><a href="linea.html">Gráfico de línea</a></li>
+                <li><a href="barra.html">Gráfico de barra</a></li>
+                <li><a href="barra_apilada.html">Gráfico de barra apilada</a></li>
+                <li><a href="barra_integrada.html">Gráfico de barra agrupada</a></li>
+                <li><a href="linea_barra.html">Gráfico de línea y barra</a></li>
+                <li><a href="burbuja.html">Gráfico de burbuja</a></li>
+                <li><a href="rendimiento.html">Gráfico de rendimiento</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="intro.html" class="dpd-menu">Recursos visuales</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-offset-2">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html"><img src="logo.png"></a></li>
+          </ul>
+        </div>
+      </div>    
+    </nav>
+    <div class="feature">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1>GRÁFICO DE BURBUJA</h1>
+          <hr>
+        </div>
+      </div>    
+    </div> 
+    <div style="margin-top: 70px;">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <p>Gráfico de puntos posicionados en un sistema de coordenadas para mostrar los valores de dos variables para un conjunto de datos. El dato puede tener valor (x, y) o (x, y, z) donde z se representa como el diámentro de la burbuja. </p>
+          <h4>CRITERIOS DE ELECCIÓN</h4>
+          <hr>
+          <p>Se utiliza cuando se necesita comparar dos variables distintas para un conjunto de datos. Si los datos solo tienen valor (x,y) se recomienda utilizar este gráfico como un gráfico de disperción donde todos los puntos tienen el mismo diámetro. Si los valores de los datos son (x,y,z) se utilizará el valor de z para definir el diámetro de las burbujas. Por otra parte, los datos también pueden estar ordenados por categorías. Si este es el caso, se recomienda no utilizar más de seis. </p>
+          <div class="row">
+            <div class="col-md-4">
+              <table class="table table-bordered" style="margin-top: 20px;">
+                <tr>
+                  <td>Mínimo de categorías</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Máximo de categorías</td>
+                  <td>6</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <h4>CRITERIOS DE IMPLEMENTACIÓN</h4>
+          <hr>
+          <p>Este gráfico puede ser utilizado con tres anchos distintos; 4, 6 y 12 columnas. Existen tres criterios para decidir el ancho indicado; El primero será determinado por la cantidad de categorías, el segundo por el total de burbujas y/o valores altos en el eje x. El tercer criterio corresponde a la composición general del <a href="etapa5.html">dashboard</a>.
+          <h6>Variaciones de tamaño.</h6>
+          <div class="row">
+            <div class="col-md-5">
+              <p>El de 4 columnas de ancho se recomienda para gráficos de entre 1 a 3 categorías.</p>
+            </div>
+            <div class="col-md-7">
+              <p>El gráfico de 6 columnas de ancho para gráficos de entre 4 a 6 categorías.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <img src="burbuja4.png" style="width: 100%;">
+            </div>
+            <div class="col-md-7">
+              <img src="burbuja6.png" style="width: 105%;">
+            </div>
+          </div>
+          <div class="row" style="margin-top: 40px;">
+            <div class="col-md-12">
+              <p>El gráfico de 12 columnas de ancho para gráficos de entre 4 a 6 categorías y también podría considerase cuando los valores de x sean muy altos.</p>
+              <img src="burbuja12.png" style="width: 103%;">
+            </div>
+          </div>
+          <h6>Uso del color</h6>
+          <p>Este gráfico no tiene variaciones de color, se debe usar la <a href="intro.html">paleta primaria.</a></p>
+          <hr style="margin-top: 70px;">
+          <a href="linea_barra.html"><div class="btn btn-primary pull-left next-btn"><span class="glyphicon glyphicon-menu-left"></span> ANTERIOR</div></a>
+          <a href="rendimiento.html"><div class="btn btn-primary pull-right next-btn">SIGUIENTE <span class="glyphicon glyphicon-menu-right"></span></div></a>  
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script src="js/holder.min.js"></script>
+</html>
